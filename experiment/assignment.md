@@ -16,7 +16,7 @@
 
 1. Why is anthracene faint yellow in color?
 
-2. How many gram of anthracene is required to make a 2.0 × 10<sup>-3</sup> M anthracene solution in 100 mL ethanol?
+2. How many gram of anthracene is required to make a 2.0 * 10<sup>-3</sup> M anthracene solution in 100 mL ethanol?
 
 3. Neglecting the volume of pyridinium chloride added with respect to the volume of anthracene solution, calculate the total concentrations of pyridinium chloride in the solution after each addition.
 
