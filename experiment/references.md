@@ -1,1 +1,21 @@
-### Link your references in here
+- L. K. Fraiji, D. M. Hayes and T. C. Werner, Static and dynamic fluorescence quenching experiments for the physical chemistry laboratory. J. Chem. Educ., 1992, 69 (5), p 424.
+
+- H. J. Pownall and L. C. Smith, Biochemistry, 1974, 13 (12), 2594.
+
+- D. Skoog, F. Holler, T. Nieman, Instrumental Analysis, 5th Edition, Harcourt, Philadelphia, 2002.
+
+- A. Gilbert, J. Baggott, Essentials of Molecular Photochemistry, 1st Edition, Blackwell, Oxford, 1991.
+
+- B. Valeur, Molecular Fluorescence: Principles and Applications, 2002, Wiley-VCH, Weinheim.
+
+- J. R. Albani, Principles and Applications of Fluorescence Spectroscopy, 2007, Blackwell Science Science Ltd, Oxford, UK.
+
+- P. Patnaik, Dean's Analytical Chemistry Handbook, 2nd Edition, McGraw-Hill Handbooks.
+
+- F. A. Settle, Handbook of Instrumental Techniques for Analytical Chemistry, 1st Edition, 1997, National Science Foundation, Arlington, Virginia.
+
+- J. R. Lakowicz, Principles of Fluorescence Spectroscopy, 2nd Ed., Kluwer Academic/Plenum Publishers, New York, 1999.
+
+- D. M. Jameson et al. in Basic Concepts in Fluorescence, Fluorescence: Basic Concepts, Principles Aspects and some Anecdotes, Methods Enzymol. 2003, 360, 1.
+
+- P. Atkins and J. D. Paula, Atkin's Physical Chemistry, 9th Edition, Oxford University Press.

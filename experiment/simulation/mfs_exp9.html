@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../libraries/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="mfs_expt9.css">
+    <title>Fluorescence Quenching and Stern-Volmer Plot: Estimation of the Quenching Constant from Stern-Volmer Plot</title>
+</head>
+
+<body> 
+<!-- Body is divided into three rows -->
+<div class="container">
+    <!-- First row consists of title of the experiment and the reset button -->
+    <div class= "row">
+        <div class="col-sm-12">
+            <h3>Fluorescence Quenching and Stern-Volmer Plot: Estimation of the Quenching Constant from Stern-Volmer Plot</h3><br/>
+            <button id="reset_btn">Reset Experiment</button>
+        </div>
+    </div><br/>
+    
+    <!-- Second row consists of two columns with one column containing buttons ie manual and data and the other containing shelf with apparatus -->
+    <div class="row">
+        <div class="col-sm-6" id="data_buttons">
+        <!-- Manual image button displays the set of instructions to be followed to perform experiment
+        On clicking this button a box modal appears over the page n displays the instruction -->
+            <img id="manual_button" src="../../common_images/manual_button.png" ><br/><br/>
+            <div id="manual" style = "z-index:1200" class="modal">
+               <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times</span>
+                        <h2>Manual</h2>
+                    </div>
+
+                    <div class="modal-body" style="text-align:left;">
+                        <ol>   
+                            <li>Prepare a 1.0 M pyridinium chloride solution and a 1.0 × 10<sup>-5</sup>M anthracene solution in spectroscopy grade ethanol.Since the concentration of anthracene is small, first a stock solution of 2.0 × 10<sup>-3</sup>M anthracene in spectroscopy grade ethanol is prepared and then it is diluted to the required concentration with the same solvent.</li>
+                            <li>From the above two solutions, prepare six sets of solutions with the following volume compositions: each set containing 3 mL of 1.0 × 10<sup>-5</sup>M anthracene solution and 0 µL, 7.5 mL, 37.5 µL, 75 µL, 112.5 µL and 150 µL of 1.0 M pyridinium chloride solutions, respectively. Here these solutions are given on a scale bar for selection.</li>
+                            <li>Run the Emission Spectral scan of the experimental solutions as follows.</li>
+                            <li>To choose a solution with a given volume composition whose fluorescence has to be measured, click on the pointer below the composition selection bar and drag it to the desired value. On selection, the solution appears in a volumetric flask. In real measurements, one should start with the lowest pyridinium chloride concentration first and proceed to next higher concentration and so on. (Why?)</li>
+                            <li>Click on the volumetric flask containing the solution to take it to the instrument table.</li>
+                            <li>Click on the all-side-transparent quartz cuvette (path length, 1 cm ×1 cm) to take it to the instrument table.</li>
+                            <li>Click on the 5 mL‑capacity pipette to take 2 mL of 10<sup>-5</sup>M anthracene solution for the measurement. In real operation, one has to set the volume to 2 mL in the pipette and an appropriate tip should be attached prior to dipping it in the solution.</li>
+                            <li>Click on the same pipette to draw the solution into the pipette.</li>
+                            <li>Transfer the solution into the cuvette by clicking on the pipette.</li>
+                            <li>Turn on the spectrofluorimeter by clicking on the power button. In real operation, it takes approx. 30 min for initialization of the instrument.</li>
+                            <li>Open the the sample chamber of the spectrofluorimeter by clicking on the lid.</li>
+                            <li>Click on the cuvette to place it in the sample holder.</li>
+                            <li>Click on the chamber lid to close it.</li>
+                            <li>To run the Emission spectral scan, open the measurement set-up screen by clicking on the fluorescence measurement icon on the computer monitor.</li>
+                            <li>Select the Emission Scan Mode on the screen.</li>
+                            <li>On the screen, enter the Excitation wavelength: 350 nm, Emission Start Wavelength: 355 nm and Emission End wavelength: 475 nm. One chooses the Excitation Slit and Emission Slit values (here 2 nm/0.5 nm) and the scan speed value (here “medium”) also.</li>
+                            <li>To run the wavelength scan for the emission spectrum, click on 'OK' button on the set-up screen. One has to be sure that the solvent blank does not fluoresce in the wavelength range of interest.</li>
+                            <li>Click on 'Close' button when spectral scan is complete. In real operation, the scan data are stored in the computer.The instrument stores data and therefore asks for the Sample File name. One enters a file name to save the data.</li>
+                            <li>Take the cuvette out of the sample chamber by clicking first on the sample chamber lid to open it and then on the cuvette.</li>
+                            <li>Close the lid of the sample chamber by clicking on it.</li>
+                            <li>Click on 'Reset' button to start over the measurement.</li>
+                            <li>Select the next higher pyridinium chloride concentration by clicking on the composition selection bar and carry out the Emission scan as before. In real measurements, if one uses the same cuvette for all the measurements, every time one should rinse the cuvette by taking a small portion of the solution to be analyzed prior to filling up the cuvette with the solution.</li>
+                            <li>Similarly, repeat the Emission spectral scans for the rest of the solutions.</li>
+                            <li>Collect all data by clicking on the Data tab.</li>
+                            <li>Determine and tabulate the values of F0 and F's for all pyridinium chloride concentrations.</li>
+                            <li>Construct the Stern-Volmer Plot.</li>
+                            <li>Determine the quenching (Stern-Volmer) constant, KSV.</li>
+                            <li>Calculate the specific rate constant, kq, for the quenching process. (Given: fluorescence lifetime of anthracene, τ0 = 4.9 × 10<sup>‑9</sup>sec)</li>
+                            <li>Calculate the diffusion controlled rate constant, kd, for the bimolecular process in ethanol by using the relation, kd = 8RT/3000η, where R is the gas constant, T is the Kelvin temperature, and η is the viscosity of ethanol = 1.078 cP at 25 oC.</li>
+                            <li>Determine the value of the ratio, kq/kd, and discuss its significance.</li> 
+                       </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- Data image button displays the graphs obtained on plotting absorbance against wavelength for different sample path lengths
+            On clicking this button a new page displaying the graphs for three different path length is opened  -->
+            <img id="data_button" src="../../common_images/data_button.png" >
+            <div id = "scale">
+                <img  id ="scale_image" src="images/scale_image.png" >
+                <input type="range" id="slider" min="0" max="5" step="1" value="0" autocomplete="off">
+            </div>
+
+        </div>
+
+        <div class="col-sm-6" id ="apparatus">
+            <img id="shelf" src="images/shelf.png">
+            <img id="round-bottom-flask"  src="../../common_images/empty-round-bottom-flask.png">
+            <img id="pipette" src="../../common_images/pipette.png" >
+            <img id="cuvette" src="../../common_images/cuvette.png" > 
+        </div>
+    </div><br/><br/><br/>
+
+    <!-- Third row consists of table with various devices on it  -->
+    <div class="row">
+        <div class="col-sm-12" id="table">
+            <img id = "table_with_spec" src="../../common_images/spec_fluormeter.png">      
+            <!-- button to scan the sample on the computer-->
+            <img id ="comp_trans_button"  src="../../common_images/vertical_button.png">
+            <!-- buttons to open and close the spectrophotometer lid -->
+            <img id ="spectrolid_trans_button" src="../../common_images/vertical_button.png">
+            <img id ="spectrolid_trans_button1" src="../../common_images/vertical_button.png">
+            <!-- text that shows the instructions to be followed next -->
+            <div id = "demo"></div>
+            <!-- button to switch on and switch off the spectrophotometer -->
+            <img id="power_trans_button" src="../../common_images/vertical_button.png" >
+        </div>
+    </div>
+
+<!-- Florescence graph validation -->
+    <img id="clockScreen" src="../../common_images/clock.png">
+    <!-- Image of the hand of the clock -->
+    <img  id="clockHand"  src="../../common_images/hand.png">
+    <!-- Image of the greyed background displayed as a background while scanning the sample -->
+    <img id="scan" src="../../common_images/transparent.png">
+    <!-- This image is used to enter the input values to display the graphs-->
+    <img id="mfs_form2" class="data_validation" src="../../common_images/mfs_form2.png">
+    <!--Displays the graph by clicking on ok button -->
+    <img id="ok_btn" class="data_validation" src="../../common_images/vertical_button.png" >
+    <!-- dropdown box to select the graphs to display -->
+    <select id="select" class="data_validation">
+          <option id="Emission" value="Emission">Emission</option>
+          <option id="Excitation" value="Excitation">Excitation</option>
+    </select> 
+    <!--graph input values -->
+    <input id = "input1" class="data_validation" type="text" autocomplete="off">
+    <input id = "input2" class="data_validation" type="text" autocomplete="off"> 
+    <input id = "input3" class="data_validation" type="text" autocomplete="off">   
+    <!-- To display the videos on entering the correct input values -->
+    <video id="video1" class="video" ><source src="videos/graph1.mp4" type="video/mp4"></video>
+    <video id="video2" class="video" ><source src="videos/graph2.mp4" type="video/mp4"></video>
+    <video id="video3" class="video" ><source src="videos/graph3.mp4" type="video/mp4"></video>
+    <video id="video4" class="video" ><source src="videos/graph4.mp4" type="video/mp4"></video>
+    <video id="video5" class="video" ><source src="videos/graph5.mp4" type="video/mp4"></video>
+    <video id="video6" class="video" ><source src="videos/graph6.mp4" type="video/mp4"></video>
+    <!-- To close the graphs video -->
+    <img id = "disposegraph" src="../../common_images/vertical_button.png">
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="../../libraries/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../../libraries/jQueryRotate.js"></script>
+    <script type="text/javascript" src="mfs_expt9.js"></script>
+    <script type="text/javascript" src="mfs9_animations.js"></script>
+</body>
+</html>
