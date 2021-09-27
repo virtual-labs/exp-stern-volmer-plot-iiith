@@ -1,7 +1,7 @@
 // This file contains all general functions used in the experiment
     var images = [];// Two images that are alternated in ordered to get the blinking effect of the spectrofluorimeter
-    images[0] = "../../common_images/specfluor_on_redLight.png";
-    images[1] = "../../common_images/specfluor_on_no_redLight.png";
+    images[0] = "common_images/specfluor_on_redLight.png";
+    images[1] = "common_images/specfluor_on_no_redLight.png";
     var x = 0;
     var y = 0;
     // Variables necessary to obtain motion of all the images
@@ -118,16 +118,16 @@ function addclickEvents(){
 //This function is used to add mouse events to elements.
 function mouseEvents(){
         document.getElementById("manual_button").addEventListener("mouseover", function(){
-            this.src='../../common_images/hover_manual.png';
+            this.src='common_images/hover_manual.png';
         });
         document.getElementById("manual_button").addEventListener("mouseout", function(){
-            this.src='../../common_images/manual_button.png';
+            this.src='common_images/manual_button.png';
         });
         document.getElementById("data_button").addEventListener("mouseover", function(){
-            this.src='../../common_images/hover_data.png';
+            this.src='common_images/hover_data.png';
         });
         document.getElementById("data_button").addEventListener("mouseout", function(){
-            this.src='../../common_images/data_button.png';
+            this.src='common_images/data_button.png';
         });
 }
 
@@ -196,16 +196,16 @@ function removeClock() {
 function spectrofluorimeter(){
     if (step_no == 7){
         // Replace the spectrofluorimeter images with the open spectrofluorimeter images
-        images[0] = "../../common_images/specfluor_open.png";
-        images[1] = "../../common_images/specfluor_open1.png";
+        images[0] = "common_images/specfluor_open.png";
+        images[1] = "common_images/specfluor_open1.png";
         document.getElementById("demo").innerHTML = "Step-No 9: Click on the cuvette to place it in the sample holder of the chamber.";
         cursorPointers('spectrolid_trans_button', 'cuvette');
         step_no++;
     }
     else if(step_no == 9 && count == 9){
         // Replace the spectrofluorimeter images with the closed spectrophotmeter images.
-        images[0] = "../../common_images/specfluor_on_redLight.png";
-        images[1] = "../../common_images/specfluor_on_no_redLight.png";
+        images[0] = "common_images/specfluor_on_redLight.png";
+        images[1] = "common_images/specfluor_on_no_redLight.png";
         document.getElementById("demo").innerHTML = "Step-No 11:To run the Emission spectral scan, open the measurement set-up screen by clicking on the fluorescence measurement icon on the computer monitor.";
         cursorPointers('spectrolid_trans_button1','comp_trans_button');
         step_no++;

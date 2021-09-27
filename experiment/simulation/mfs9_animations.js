@@ -181,7 +181,7 @@ function movePipette() {
         }
         else if(step_no == 5 && count == 5){
             $("#cuvette").attr("src", "images/cuvette-with-solution.png");
-            elem.src = "../../common_images/pipette.png";
+            elem.src = "common_images/pipette.png";
             step_no++;
             setTimeout(function(){ 
                 movebackPipette();

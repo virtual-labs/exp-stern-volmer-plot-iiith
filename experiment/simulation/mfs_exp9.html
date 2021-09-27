@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../../libraries/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libraries/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="mfs_expt9.css">
     <title>Fluorescence Quenching and Stern-Volmer Plot: Estimation of the Quenching Constant from Stern-Volmer Plot</title>
 </head>
@@ -24,7 +24,7 @@
         <div class="col-sm-6" id="data_buttons">
         <!-- Manual image button displays the set of instructions to be followed to perform experiment
         On clicking this button a box modal appears over the page n displays the instruction -->
-            <img id="manual_button" src="../../common_images/manual_button.png" ><br/><br/>
+            <img id="manual_button" src="common_images/manual_button.png" ><br/><br/>
             <div id="manual" style = "z-index:1200" class="modal">
                <!-- Modal content -->
                 <div class="modal-content">
@@ -71,7 +71,7 @@
             </div>
             <!-- Data image button displays the graphs obtained on plotting absorbance against wavelength for different sample path lengths
             On clicking this button a new page displaying the graphs for three different path length is opened  -->
-            <img id="data_button" src="../../common_images/data_button.png" >
+            <img id="data_button" src="common_images/data_button.png" >
             <div id = "scale">
                 <img  id ="scale_image" src="images/scale_image.png" >
                 <input type="range" id="slider" min="0" max="5" step="1" value="0" autocomplete="off">
@@ -81,38 +81,38 @@
 
         <div class="col-sm-6" id ="apparatus">
             <img id="shelf" src="images/shelf.png">
-            <img id="round-bottom-flask"  src="../../common_images/empty-round-bottom-flask.png">
-            <img id="pipette" src="../../common_images/pipette.png" >
-            <img id="cuvette" src="../../common_images/cuvette.png" > 
+            <img id="round-bottom-flask"  src="common_images/empty-round-bottom-flask.png">
+            <img id="pipette" src="common_images/pipette.png" >
+            <img id="cuvette" src="common_images/cuvette.png" > 
         </div>
     </div><br/><br/><br/>
 
     <!-- Third row consists of table with various devices on it  -->
     <div class="row">
         <div class="col-sm-12" id="table">
-            <img id = "table_with_spec" src="../../common_images/spec_fluormeter.png">      
+            <img id = "table_with_spec" src="common_images/spec_fluormeter.png">      
             <!-- button to scan the sample on the computer-->
-            <img id ="comp_trans_button"  src="../../common_images/vertical_button.png">
+            <img id ="comp_trans_button"  src="common_images/vertical_button.png">
             <!-- buttons to open and close the spectrophotometer lid -->
-            <img id ="spectrolid_trans_button" src="../../common_images/vertical_button.png">
-            <img id ="spectrolid_trans_button1" src="../../common_images/vertical_button.png">
+            <img id ="spectrolid_trans_button" src="common_images/vertical_button.png">
+            <img id ="spectrolid_trans_button1" src="common_images/vertical_button.png">
             <!-- text that shows the instructions to be followed next -->
             <div id = "demo"></div>
             <!-- button to switch on and switch off the spectrophotometer -->
-            <img id="power_trans_button" src="../../common_images/vertical_button.png" >
+            <img id="power_trans_button" src="common_images/vertical_button.png" >
         </div>
     </div>
 
 <!-- Florescence graph validation -->
-    <img id="clockScreen" src="../../common_images/clock.png">
+    <img id="clockScreen" src="common_images/clock.png">
     <!-- Image of the hand of the clock -->
-    <img  id="clockHand"  src="../../common_images/hand.png">
+    <img  id="clockHand"  src="common_images/hand.png">
     <!-- Image of the greyed background displayed as a background while scanning the sample -->
-    <img id="scan" src="../../common_images/transparent.png">
+    <img id="scan" src="common_images/transparent.png">
     <!-- This image is used to enter the input values to display the graphs-->
-    <img id="mfs_form2" class="data_validation" src="../../common_images/mfs_form2.png">
+    <img id="mfs_form2" class="data_validation" src="common_images/mfs_form2.png">
     <!--Displays the graph by clicking on ok button -->
-    <img id="ok_btn" class="data_validation" src="../../common_images/vertical_button.png" >
+    <img id="ok_btn" class="data_validation" src="common_images/vertical_button.png" >
     <!-- dropdown box to select the graphs to display -->
     <select id="select" class="data_validation">
           <option id="Emission" value="Emission">Emission</option>
@@ -130,12 +130,12 @@
     <video id="video5" class="video" ><source src="videos/graph5.mp4" type="video/mp4"></video>
     <video id="video6" class="video" ><source src="videos/graph6.mp4" type="video/mp4"></video>
     <!-- To close the graphs video -->
-    <img id = "disposegraph" src="../../common_images/vertical_button.png">
+    <img id = "disposegraph" src="common_images/vertical_button.png">
 </div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="../../libraries/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script src="../../libraries/jQueryRotate.js"></script>
+    <script src="libraries/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="libraries/jQueryRotate.js"></script>
     <script type="text/javascript" src="mfs_expt9.js"></script>
     <script type="text/javascript" src="mfs9_animations.js"></script>
 </body>
